@@ -2,7 +2,7 @@
 
 🟢 Difficulty: Hard
 
-🔗 Problem: https://leetcode.com/problems/substring-with-concatenation-of-all-words/submissions/1994014297/
+🔗 Problem: https://leetcode.com/problems/longest-valid-parentheses/description/
 
 ## 💻 Solution (txt)
 

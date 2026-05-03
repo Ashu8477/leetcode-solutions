@@ -2,7 +2,7 @@
 
 🟢 Difficulty: Hard
 
-🔗 Problem: https://leetcode.com/problems/longest-valid-parentheses/submissions/1994001988/
+🔗 Problem: https://leetcode.com/problems/longest-valid-parentheses/
 
 ## 💻 Solution (txt)
 

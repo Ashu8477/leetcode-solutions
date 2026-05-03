@@ -1,21 +1,34 @@
 # LeetCode Problem
 
-🟢 Difficulty: Unknown
+🟢 Difficulty: Hard
 
-🔗 Problem: https://leetcode.com/problems/swap-nodes-in-pairs/submissions/1992346361/
+🔗 Problem: https://leetcode.com/problems/merge-k-sorted-lists/submissions/1993886186/
 
 ## 💻 Solution (txt)
 
 ```txt
+import heapq
 class Solution:
-    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        dummy = ListNode(0, head)
-        prev = dummy
+    def mergeKLists(self, lists: List[Optional
+[ListNode]]) -> Optional[ListNode]:
+        heap = []
         
-        while prev.next and prev.next.next:
-            a = prev.next
-            b = a.next
+        for i, node in enumerate(lists):
+            if node:
+                heapq.heappush(heap, (node.
+val, i, node))
+        
+        dummy = ListNode(0)
+        cur = dummy
+        
+        while heap:
+            val, i, node = heapq.heappop(heap)
+            cur.next = node
+            cur = cur.next
             
-            prev.next = b
-            a.next = b.next
+            if node.next:
+                heapq.heappush(heap, (node.
+next.val, i, node.next))
+        
+        return dummy.next
 ```
